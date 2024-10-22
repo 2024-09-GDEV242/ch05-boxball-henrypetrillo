@@ -59,6 +59,15 @@ public class Canvas
         frame.pack();
         setVisible(true);
     }
+    
+    /**
+     * Canvas Constructor that allows me to get an instance of the erase() method into the BallDemo class.
+     */
+    public Canvas(Graphics2D graphic, Color backgroundColor, CanvasPane canvas) {
+        this.graphic = graphic;
+        this.backgroundColor = backgroundColor;
+        this.canvas = canvas;
+    }
 
     /**
      * Set the canvas visibility and brings canvas to the front of screen
